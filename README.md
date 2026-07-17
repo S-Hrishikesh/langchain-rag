@@ -14,11 +14,11 @@ Unlike standard RAG tutorials that rely on default settings and prone-to-fail as
 
 ## ✨ Key Features
 
-* **⚡ Lazy-Loaded Embeddings (`Embedding_Manager`):** Wraps Hugging Face's `all-MiniLM-L6-v2` with lazy initialization—loading model weights into system memory only when embedding generation is explicitly triggered to reduce startup overhead and conserve RAM.
-* **🎯 True Cosine Similarity Math (`VectorStore` & `RAGRetriever`):** Explicitly overrides ChromaDB's default L2 (Squared Euclidean) distance metric by enforcing `"hnsw:space": "cosine"`. This ensures retriever similarity scores (`1 - distance`) mathematically map to true 0.0–1.0 percentages for reliable threshold filtering.
-* **🛡️ Collision-Free Multi-PDF Indexing:** Automatically assigns unique UUID-based chunk hashes (`doc_{uuid}_{index}`) and rich metadata (chunk index, content length) during ingestion, allowing seamless appending of new documents without data overwriting or ID conflicts.
-* **🚀 Ultra-Fast Inference (`ChatGroq`):** Integrated with Groq's LPU architecture using state-of-the-art models like `llama-3.3-70b-versatile` and `llama-3.1-8b-instant` for near-instantaneous synthesis of retrieved context.
-* **📦 Modern Dependency Management:** Structured with `pyproject.toml` and locked via `uv` for deterministic, lightning-fast virtual environment setup.
+* ** Lazy-Loaded Embeddings (`Embedding_Manager`):** Wraps Hugging Face's `all-MiniLM-L6-v2` with lazy initialization—loading model weights into system memory only when embedding generation is explicitly triggered to reduce startup overhead and conserve RAM.
+* ** True Cosine Similarity Math (`VectorStore` & `RAGRetriever`):** Explicitly overrides ChromaDB's default L2 (Squared Euclidean) distance metric by enforcing `"hnsw:space": "cosine"`. This ensures retriever similarity scores (`1 - distance`) mathematically map to true 0.0–1.0 percentages for reliable threshold filtering.
+* ** Collision-Free Multi-PDF Indexing:** Automatically assigns unique UUID-based chunk hashes (`doc_{uuid}_{index}`) and rich metadata (chunk index, content length) during ingestion, allowing seamless appending of new documents without data overwriting or ID conflicts.
+* ** Ultra-Fast Inference (`ChatGroq`):** Integrated with Groq's LPU architecture using state-of-the-art models like `llama-3.3-70b-versatile` and `llama-3.1-8b-instant` for near-instantaneous synthesis of retrieved context.
+* ** Modern Dependency Management:** Structured with `pyproject.toml` and locked via `uv` for deterministic, lightning-fast virtual environment setup.
 
 ---
 
