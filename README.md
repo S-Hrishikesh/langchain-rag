@@ -53,8 +53,3 @@ langchain-rag/
 └── README.md                  # Project documentation
 
 
-Architectural Choice,Standard Tutorial Approach,This Repository's Approach
-Distance Metric,Uses default L2 Euclidean distance,"Enforces Cosine Similarity (hnsw:space: cosine), making similarity math accurate and predictable"
-Model Loading,Loads embedding models globally on import,Uses Lazy Loading to conserve system RAM until vector generation actually begins
-Document Indexing,Relies on auto-incrementing integers or basic hashes,Generates UUID-based chunk hashes to guarantee collision-free multi-file appending
-LLM Inference,Slow local CPU/GPU inference or rate-limited APIs,Leverages Groq LPU Cloud Inference for instantaneous token generation
