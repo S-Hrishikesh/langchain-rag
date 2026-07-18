@@ -50,6 +50,6 @@ langchain-rag/
 ├── pyproject.toml             # Project dependencies & metadata
 ├── uv.lock                    # Deterministic lockfile for uv package manager
 ├── requirements.txt           # Standard pip dependency export
-└── README.md                  # Project documentation
+└── README.md                  # Project documentation and tutorial
 
 
